@@ -7,26 +7,26 @@
 
 ## Database 
 - 데이터베이스 조회  
-	```show databases;```  
+```show databases;```  
 
 - 데이터베이스 만들기  
-	```ex) create database myDB;``` 
+```ex) create database myDB;``` 
 	
 - 데이터베이스 사용  
-	```ex) use myDB;```
+```ex) use myDB;```
 
 ## Table
 - 테이블 조회  
-	 ```show tables;```  
+```show tables;```  
 	 
 - 테이블 만들기  
 ```
-  create table user(
-    email char(20),
-    name char(20),
-    pw char(20),
-    primary key(email)
-  );
+create table user(
+	email char(20),
+    	name char(20),
+    	pw char(20),
+    	primary key(email)
+);
 ```  
 			
 - 테이블에 데이터 넣기  
