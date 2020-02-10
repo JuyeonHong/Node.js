@@ -7,9 +7,9 @@
 	프로젝트에서 사용하는 외부모듈이 많아질 경우 module마다 버전을 관리하기 힘들고,  
 	module개수만큼 npm install 을 입력해야하는 불편한 상황이 발생.  
 	이런 문제를 해결하기 위해 설치된 module을 list화해서 관리할 수 있는 파일이 **package.json**.
-	> package.json 생성  
+	* package.json 생성  
 	`npm init`
-	> package.json으로 module 한 번에 다운로드하기  
+	* package.json으로 module 한 번에 다운로드하기  
 	`npm install`
 - package.json에서 중요한 것   
 	* script: run 명령어를 통해서 실행할 것들을 적어둠
