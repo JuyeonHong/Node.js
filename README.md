@@ -1,5 +1,38 @@
 # node.js 
 
+## npm start
+- npm(Node Package Manager)  
+	node.js로 만들어진 package(module)을 관리해주는 툴
+- package.json으로 package(module) 관리하기  
+	프로젝트에서 사용하는 외부모듈이 많아질 경우 module마다 버전을 관리하기 힘들고,  
+	module개수만큼 npm install 을 입력해야하는 불편한 상황이 발생.  
+	이런 문제를 해결하기 위해 설치된 module을 list화해서 관리할 수 있는 파일이 **package.json**.
+	> package.json 생성  
+	`npm init`
+	> package.json으로 module 한 번에 다운로드하기  
+	`npm install`
+- package.json에서 중요한 것   
+	* script: run 명령어를 통해서 실행할 것들을 적어둠
+	* dependencies: 설치할 모듈들을 의미
+		`npm install -g webpack` 설치를 통해 자동으로 기록할 수 있음
+-  Express  
+	웹 및 모바일 애플리케이션을 위한 일련의 기능을 제공하는 Node.js 웹 애플리케이션 프레임워크
+- 기본예제  
+- ```
+	var express = require('express');
+	var app = express();
+	
+	// 주소가 '/' 최상위 url로 들어오면 Hello hello 내보냄
+	app.get('/', function(req,res) {
+	    res.send("<h1>hello hello</h1>");
+	})
+	
+	// 3000번 포트로 들어오면 열어주는 부분
+	app.listen(3000, function() {
+	    console.log('example app listening on port 3000');
+	})
+	```
+
 ## node.js in mySQL
 ### mySQL 시작하기
 1. ```mysql.server start```
